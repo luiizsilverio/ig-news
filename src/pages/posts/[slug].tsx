@@ -61,10 +61,12 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params }) =>
       year: 'numeric'
     })
   
+  const container = response.data.container
+
   const post = {
     slug,
     title: RichText.asText(response.data.title),
-    content: RichText.asHtml(response.data.container),
+    content: container ? RichText.asHtml(container) : '',
     updatedAt: vdata
   }
 

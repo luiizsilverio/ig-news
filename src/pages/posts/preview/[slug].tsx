@@ -86,10 +86,13 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       year: 'numeric'
     })  
   
+  const container = response.data.container
+
   const post = {
     slug,
     title: RichText.asText(response.data.title),
-    content: RichText.asHtml(response.data.container.splice(0, 3)),
+    content: container ? RichText.asHtml(container.splice(0, 3)) : '',
+    //content: RichText.asHtml(response.data.container.splice(0, 3)),
     updatedAt: vdata
   }
 

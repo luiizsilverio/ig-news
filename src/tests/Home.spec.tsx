@@ -16,9 +16,9 @@ jest.mock('../services/stripe')
 describe('Home Page', () => {
 
     it('renderiza corretamente', () => {
-        render(<Home product={{priceId: '1', amount: 'R$10,00' }} />)
+        render(<Home product={{priceId: '1', amount: '$10.00' }} />)
 
-        expect(screen.getByText("por R$10,00 mensal")).toBeInTheDocument()
+        expect(screen.getByText("por $10.00 mensal")).toBeInTheDocument()
     })
 
     it('carrega dados iniciais em GetStaticProps', async () => {
@@ -36,7 +36,7 @@ describe('Home Page', () => {
                 props: {
                     product: {
                         priceId: 'fake',
-                        amount: 'R$ 10,00'
+                        amount: '$10.00'
                     }
                 }                
             })
