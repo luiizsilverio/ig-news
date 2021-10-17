@@ -9,8 +9,8 @@
 * [Contato](#email-contato)
 
 ## Sobre o projeto
-Ig.News é uma aplicação de Artigos (posts) Desenvolvida em React / Next.<br />
-O login é feito pela rede social Github.<br />
+Ig.News é uma aplicação que disponibiliza Artigos (posts) sobre variados assuntos.
+Desenvolvida em React / Next, o login da aplicação é feito pela rede social Github.<br />
 Os artigos são armazenados no CMS Prismic e só podem ser acessados mediante assinatura mensal.<br />
 A assinatura mensal é feita por meio da API de pagamentos Stripe.<br />
 Sem a assinatura, só é possível visualizar uma prévia dos artigos.<br />
@@ -28,16 +28,13 @@ A aplicação está disponível [aqui](https://ig-news-theta.vercel.app).
 * Estilização com <ins>SASS</ins>
 
 ## :camera_flash: Screenshots
-![](https://github.com/luiizsilverio/ig-news/blob/main/public/images/screenshot1.png)
-![](https://github.com/luiizsilverio/ig-news/blob/main/public/images/screenshot2.png)
-![](https://github.com/luiizsilverio/ig-news/blob/main/public/images/screenshot3.png)
-![](https://github.com/luiizsilverio/ig-news/blob/main/public/images/screenshot4.png)
+![](https://github.com/luiizsilverio/ig-news/blob/main/public/images/ignews.gif)
 
 ## :car: Iniciando o projeto
 * Baixe o repositório com ```git clone```
 * Digite ```yarn``` para inicializar o projeto.
-* Crie uma cópia do arquivo __.env.local.example__ e renomeie para __.env.local__.
-* Para funcionar, precisa criar uma conta no Stripe, Github, Prismic e FaunaDB e informar as respectivas chaves no arquivo __.env.local__.
+* Crie uma cópia do arquivo ```.env.local.example``` e renomeie para ```.env.local```.
+* Para funcionar, precisa criar uma conta no Stripe, Github, Prismic e FaunaDB e informar as respectivas chaves no arquivo ```.env.local```.
 * digite ```yarn dev``` no terminal e acesse a aplicação em http://localhost:3000
 
 ## :balance_scale: Licença
