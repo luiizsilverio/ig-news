@@ -18,5 +18,3 @@ export default class MyDocument extends Document {
     )
   }
 }
-
-//<title>ig.news</title>
